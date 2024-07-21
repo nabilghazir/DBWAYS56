@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="bgc">
+    <!-- Navbar -->
+    <div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="index.html">
+              <img src="./assets/img/brandred.png" />
+            </a>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href=""> My Project </a></li>
+        </ul>
+        <div>
+          <a href="contact.html" class="contact">Contact Me </a>
+        </div>
+      </nav>
+    </div>
+    <!-- Body -->
+    <div class="contactbody">
+      <h1>Get to know</h1>
+      <div>
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" />
+          </div>
+          <div>
+            <label for="subject">Subject</label>
+            <select id="subject">
+              <option hidden></option>
+              <option>Fullstack Developer</option>
+              <option>Frontend Developer</option>
+              <option>Backend Developer</option>
+            </select>
+          </div>
+          <div>
+            <label for="desc">Description</label>
+            <textarea id="desc"></textarea>
+          </div>
+          <button type="submit" onclick="submitform(event)">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/contact.js"></script>
+</html>
