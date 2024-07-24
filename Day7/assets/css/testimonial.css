@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+}
+.bgc {
+  background-color: rgb(193, 193, 193);
+  background-image: linear-gradient(
+    to right top,
+    rgb(242, 184, 242),
+    rgb(185, 180, 180),
+    rgb(255, 182, 65)
+  );
+  width: 99vw;
+}
+/* Testimonial */
+
+.body {
+  margin: 100px auto;
+  background-color: rgba(255, 255, 255, 0.556);
+  width: 1200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px;
+}
+
+div h1 {
+  text-align: center;
+  padding: 40px;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-grid-testi {
+  background-color: rgba(255, 255, 255, 0.556);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 310px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0.5px 0.5px 1.5px 1.5px;
+}
+
+.container-grid-testi img {
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+}
+
+.container-grid-testi .quote {
+  margin: 10px;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.container-grid-testi .user {
+  text-align: end;
+}
+
+@media only screen and (max-width: 451px) {
+  .body {
+    width: 400px;
+  }
+}

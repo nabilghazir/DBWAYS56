@@ -116,6 +116,7 @@
   flex-direction: column;
   width: 700px;
   background-color: rgba(255, 255, 255, 0.556);
+  box-shadow: 3px 3px 10px;
   border-radius: 10px;
 }
 .contactbody h1 {
