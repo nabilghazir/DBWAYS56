@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bgc">
+    <!-- Navbar -->
+    <div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="index.html">
+              <img src="./assets/img/brandred.png" />
+            </a>
+          </li>
+          <li><a href="index.html" class="active collapse">Home</a></li>
+          <li><a href="./myproject.html" class="collapse"> My Project </a></li>
+        </ul>
+        <div class="collapse">
+          <a href="contact.html" class="contact">Contact Me </a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <button onclick="openHamburger()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div class="dropdown" id="dropdown">
+      <div>
+        <a href="index.html">Home</a>
+      </div>
+      <div>
+        <a href="myproject.html">My Project</a>
+      </div>
+      <div>
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </div>
+    <!-- Body -->
+    <div class="contactbody">
+      <h1>Get to know</h1>
+      <div>
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" />
+          </div>
+          <div>
+            <label for="subject">Subject</label>
+            <select id="subject">
+              <option hidden></option>
+              <option>Fullstack Developer</option>
+              <option>Frontend Developer</option>
+              <option>Backend Developer</option>
+            </select>
+          </div>
+          <div>
+            <label for="desc">Description</label>
+            <textarea id="desc"></textarea>
+          </div>
+          <button type="submit" onclick="submitform(event)">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/contact.js"></script>
+  <script src="./assets/js/hamburger.js"></script>
+</html>

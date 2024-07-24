@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bgc {
+  background-color: rgb(193, 193, 193);
+  background-image: linear-gradient(
+    to right top,
+    rgb(242, 184, 242),
+    rgb(185, 180, 180),
+    rgb(255, 182, 65)
+  );
+}
+
+/* index.html */
+.body {
+  margin: 100px;
+  display: flex;
+  border-style: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.442);
+  box-shadow: 3px 3px 10px;
+}
+
+.button-card {
+  font-size: 20px;
+  background-color: rgba(19, 16, 21, 0.53);
+  border-style: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.button-card:hover {
+  background-color: black;
+  transition: 0.4s;
+}
+
+.buttonfont {
+  text-decoration: none;
+  color: white;
+}
+
+.cardborder {
+  border-style: none;
+  margin: auto;
+  width: fit-content;
+  box-shadow: 2px 2px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.image {
+  width: 500px;
+  border-radius: 10px;
+  margin-bottom: 0px;
+}
+
+.cardtext {
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  gap: 30px;
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.h1 {
+  margin-bottom: 20px;
+}
+
+.cardtextt {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 40px;
+  justify-content: center;
+}
+
+.classlagi {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+}
+
+.classtext {
+  padding-top: 10px;
+}
+
+/* contact.html */
+
+.contactbody {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 700px;
+  background-color: rgba(255, 255, 255, 0.556);
+  border-radius: 10px;
+}
+.contactbody h1 {
+  text-align: center;
+  margin: 30px;
+}
+
+.contactbody div form div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 40px;
+}
+
+.contactbody div form div input {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border-style: none;
+  height: 15px;
+  padding: 10px;
+  box-shadow: 0.5px 0.5px 1.5px 1.5px;
+}
+
+.contactbody div form div select {
+  height: 40px;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0.5px 0.5px 1.5px 1.5px;
+}
+
+.contactbody div form div select:hover {
+  border-radius: 10px;
+}
+
+.contactbody div form div textarea {
+  resize: none;
+  height: 80px;
+  border-radius: 10px;
+  padding: 10px;
+  border-style: none;
+  box-shadow: 0.5px 0.5px 1.5px 1.5px;
+}
+
+.contactbody div form button {
+  margin: 20px;
+  float: right;
+  padding: 10px;
+  border-style: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.556);
+  color: rgb(41, 41, 41);
+  box-shadow: 0.5px 0.5px 1.5px 1.5px;
+  align-items: center;
+}
+.contactbody div form button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 196, 144);
+  font-weight: 500;
+  color: black;
+  transition: 0.3s;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/myproject.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bgc">
+    <!-- Navbar -->
+    <div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="index.html">
+              <img src="./assets/img/brandred.png" />
+            </a>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./myproject.html" class="active"> My Project </a></li>
+        </ul>
+        <div>
+          <a href="contact.html" class="contact">Contact Me </a>
+        </div>
+      </nav>
+    </div>
+    <!-- Body -->
+    <div class="body">
+      <div class="borderbody">
+        <h1 class="h1">Add Project</h1>
+        <form class="form" onsubmit="addProject(event)">
+          <div>
+            <label for="projectname">Project Name</label>
+            <input class="inputborder" type="text" id="projectname" />
+          </div>
+          <div class="date">
+            <div>
+              <label for="startdate">Start Date</label>
+              <input class="inputborder" type="date" id="startdate" />
+            </div>
+            <div>
+              <label for="enddate">End Date</label>
+              <input class="inputborder" type="date" id="enddate" />
+            </div>
+          </div>
+          <div>
+            <label for="description">Description</label>
+            <textarea id="description" class="textarea"></textarea>
+          </div>
+          <div class="tech">
+            <label>Technologies</label>
+            <div class="techh">
+              <div class="tech1">
+                <div>
+                  <label for="node-js">
+                    <input type="checkbox" id="nodejs" />
+                    Node JS
+                  </label>
+                </div>
+                <div>
+                  <label for="js">
+                    <input type="checkbox" id="js" />
+                    JavaScript
+                  </label>
+                </div>
+              </div>
+              <div class="tech2">
+                <div>
+                  <label for="reactjs">
+                    <input type="checkbox" id="reactjs" />
+                    React JS
+                  </label>
+                </div>
+                <div>
+                  <label for="android">
+                    <input type="checkbox" id="android" />
+                    Android
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="uploadImage">
+            <label for="uploadimage">Upload Image </label>
+            <input type="file" id="uploadimage" hidden />
+          </div>
+          <div class="containerbutton">
+            <button class="button" type="submit">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr class="line" />
+    <!-- Project List -->
+    <h1 class="header">My Project</h1>
+    <div class="projectlist" id="myproject">
+      <div class="projectcard">
+        <img src="./assets/img/pinkpanther.png" />
+        <a href="myproject-detail.html">
+          <h1>Barudak Ngoding ygy</h1>
+        </a>
+        <h3>Durasi : 3 Bulan</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
+          dolor iste, delectus nostrum incidunt eos, maxime voluptatibus maiores
+          optio saepe error doloribus eveniet rsadasdasatione at ea eum
+          necessitatibus veritatis magnam?
+        </p>
+        <div class="flexicon">
+          <i class="fa-brands fa-react icon-large"></i>
+          <i class="fa-brands fa-js icon-large"></i>
+          <i class="fa-brands fa-android icon-large"></i>
+          <i class="fa-brands fa-node-js icon-large"></i>
+        </div>
+        <div class="buttonpc">
+          <button>Edit</button>
+          <button>Delete</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/myproject.js"></script>
+</html>
