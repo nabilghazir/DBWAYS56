@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonial</title>
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/testimonial.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bgc">
+    <!-- Navbar -->
+    <div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="index.html">
+              <img src="./assets/img/brandred.png" />
+            </a>
+          </li>
+          <li><a href="index.html" class="collapse">Home</a></li>
+          <li><a href="./myproject.html" class="collapse"> My Project </a></li>
+          <li>
+            <a href="./testimonial.html" class="active collapse">Testimonial</a>
+          </li>
+        </ul>
+        <div class="collapse">
+          <a href="contact.html" class="contact">Contact Me </a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <button onclick="openHamburger()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div class="dropdown" id="dropdown">
+      <div>
+        <a href="index.html">Home</a>
+      </div>
+      <div>
+        <a href="myproject.html">My Project</a>
+      </div>
+      <div>
+        <a href="contact.html">Contact Me</a>
+      </div>
+      <div>
+        <a href="testimonial.html">Testimonial</a>
+      </div>
+    </div>
+    <!-- Body -->
+    <div class="body">
+      <h1 class="h1">Testimonial</h1>
+      <div class="buttongroup">
+        <button onclick="allTestimonial()">All</button>
+        <button onclick="testimonialFilter(1)">
+          1 <i class="fa-sharp fa-regular fa-star"></i>
+        </button>
+        <button onclick="testimonialFilter(2)">
+          2 <i class="fa-sharp fa-regular fa-star"></i>
+        </button>
+        <button onclick="testimonialFilter(3)">
+          3 <i class="fa-sharp fa-regular fa-star"></i>
+        </button>
+        <button onclick="testimonialFilter(4)">
+          4 <i class="fa-sharp fa-regular fa-star"></i>
+        </button>
+        <button onclick="testimonialFilter(5)">
+          5 <i class="fa-sharp fa-regular fa-star"></i>
+        </button>
+      </div>
+      <div class="container-grid" id="container-grid"></div>
+    </div>
+  </body>
+  <script src="./assets/js/hamburger.js"></script>
+  <script src="./assets/js/testimonial.js"></script>
+</html>

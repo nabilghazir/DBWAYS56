@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bgc {
+  background-color: rgb(193, 193, 193);
+  background-image: linear-gradient(
+    to right top,
+    rgb(242, 184, 242),
+    rgb(185, 180, 180),
+    rgb(255, 182, 65)
+  );
+}
+
+/* body */
+.body {
+  margin: 75px auto;
+  width: 700px;
+  background-color: rgba(255, 255, 255, 0.442);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px;
+}
+
+.h1 {
+  text-align: center;
+}
+
+.borderbody {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form div label {
+  margin-bottom: 10px;
+}
+
+.inputborder {
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0.5px 0.5px 1.5px 1.5px;
+  padding: 10px;
+}
+
+.date {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between;
+  padding: 0 140px;
+}
+
+.textarea {
+  resize: none;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0.5px 0.5px 1.5px 1.5px;
+  padding: 10px;
+}
+
+.tech {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.techh {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 200px;
+}
+
+.tech1 {
+  display: flex !important;
+}
+
+.tech1 div {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.tech2 {
+  display: flex !important;
+}
+
+.tech2 div {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.uploadImage {
+  display: flex !important;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0.5px 0.5px 1.5px 1.5px;
+}
+
+.uploadImage label {
+  background-color: lightgrey;
+  color: rgb(98, 98, 98);
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: fit-content;
+  margin: 0 !important;
+}
+
+.button {
+  display: block !important;
+  margin: 20px;
+  float: right;
+  padding: 10px;
+  border-style: none;
+  width: 100px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.556);
+  color: rgb(41, 41, 41);
+  box-shadow: 0.5px 0.5px 1.5px 1.5px;
+  align-items: center;
+}
+
+.containerbutton {
+  display: block !important;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 196, 144);
+  font-weight: 500;
+  color: black;
+  transition: 0.3s;
+}
+
+/* Project List */
+
+hr {
+  margin: 30px auto;
+}
+
+.projectlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.header {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.projectcard {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  align-items: center;
+  box-shadow: 0.5px 0.5px 1.5px 1.5px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.556);
+  border-radius: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.projectcard img {
+  width: 200px;
+  margin: 20px;
+  align-items: center;
+}
+
+.projectcard a {
+  text-decoration: none;
+  color: black;
+}
+
+.projectcard a h1 {
+  font-size: larger;
+  margin: 10px;
+}
+
+.projectcard h3 {
+  margin: 10px;
+}
+
+.flexicon {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+
+.icon-large {
+  font-size: 25px;
+}
+
+.buttonpc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.buttonpc button {
+  display: block;
+  border-style: none;
+  width: 50px;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.556);
+  color: rgb(39, 35, 35);
+  box-shadow: 0.5px 0.5px 1.5px 1.5px;
+}
+
+.buttonpc button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 196, 144);
+  font-weight: 500;
+  color: black;
+  transition: 0.3s;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 451px) {
+  .body {
+    width: 350px;
+  }
+  .date {
+    padding: 0 20px;
+  }
+
+  .techh {
+    padding: 0 20px;
+  }
+}
