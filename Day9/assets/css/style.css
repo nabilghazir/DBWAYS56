@@ -21,7 +21,7 @@
       rgb(185, 180, 180),
       rgb(255, 182, 65)
     );
-    width: 100;
+    width: 100vw;
     height: 100vh;
   }
 }
@@ -192,6 +192,10 @@
 
   .image {
     width: 400px;
+  }
+
+  .cardborder {
+    padding: 10px;
   }
 
   .contactbody {

@@ -58,7 +58,7 @@ function addProject(event) {
   } else if (distancedays >= 7 && distanceweeks < 4) {
     duration = `${distanceweeks} minggu`;
   } else if (distanceweeks >= 4 && distancemonths < 12) {
-    duration = `${distancemonths} bulan ${distancedays} hari`;
+    duration = `${distancemonths} bulan`;
   } else if (distancemonths >= 12) {
     duration = `${distanceyears} tahun`;
   }
