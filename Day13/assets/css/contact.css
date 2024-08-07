@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bgc {
+  background-color: rgb(193, 193, 193);
+  background-image: linear-gradient(
+    to right top,
+    rgb(242, 184, 242),
+    rgb(185, 180, 180),
+    rgb(255, 182, 65)
+  );
+}
+
+.contactbody {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 900px;
+  background-color: rgba(255, 255, 255, 0.556);
+  box-shadow: 3px 3px 10px;
+  border-radius: 10px;
+}
+
+.contactbody h1 {
+  text-align: center;
+  margin: 30px;
+}
+
+.btncontact {
+  padding: 100px;
+}
+
+.txtarea {
+  height: 100px;
+  resize: none;
+}

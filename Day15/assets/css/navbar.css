@@ -1,0 +1,52 @@
+.nav-bgc {
+  background-color: rgba(255, 255, 255, 0.418) !important;
+}
+
+.img {
+  width: 60px;
+  margin-right: 15px;
+}
+
+.nav-item a:hover {
+  font-size: 20px;
+  transition: 0.7s;
+  background-color: rgba(255, 173, 101, 0.664);
+  border-radius: 10px;
+}
+
+.nav-item a {
+  border-radius: 10px;
+  transition: 0.7s;
+}
+
+.active {
+  color: black;
+  font-size: 20px;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-outline-dark:hover {
+  background-color: rgba(255, 173, 101, 0.548);
+}
+
+/* .show {
+  background-color: rgba(255, 255, 255, 0.418);
+} */
+
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.418);
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.752);
+}
+
+/* Alert */
+.alert {
+  width: 800px;
+}
