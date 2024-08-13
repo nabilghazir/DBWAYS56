@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bgc {
+  background-color: rgb(193, 193, 193);
+  background-image: linear-gradient(
+    to right top,
+    rgb(242, 184, 242),
+    rgb(185, 180, 180),
+    rgb(255, 182, 65)
+  );
+}
+
+/*  */
+
+.cbgc {
+  background-color: rgba(255, 255, 255, 0.556);
+  box-shadow: 3px 3px 10px;
+}
+
+.cw {
+  width: 850px;
+  padding: 30px;
+}
+
+.width {
+  width: 600px;
+}
+.btn-secondary {
+  background-color: rgba(255, 173, 101, 0.548);
+}
+
+.btn-secondary:hover {
+  background-color: rgb(255, 173, 101);
+}
